@@ -36,7 +36,9 @@ button{
   margin: 20px auto;
 }
 
-
+.doctor-info{
+  margin: 50px 700px auto 50px; 
+}
 
 .search h1{
   font-size: 35px; 
@@ -45,33 +47,36 @@ button{
 /*ABOUT SECTION*/
 
 #about p{
-  display: inline-block; 
   font-family: 'Roboto', sans-serif; 
   font-size: 20px; 
   text-align: left;
-  margin: 50px 700px auto 50px; 
+  margin: 50px 700px auto 130px; 
+  width: 50%; 
 
+}
+
+#description {
+  display: block;
 }
 
 #about h1{
   display: inline-block; 
-  margin: auto auto auto 50px; 
+  margin: auto auto auto 130px; 
   text-align: left; 
   font-family: 'Roboto', sans-serif; 
 
 }
 #about img{
-  float: right; 
+   
   height: 300px;
   width: 25%; 
-  margin: auto 80px 50px auto; 
-  display: inline-block;
+  margin: auto 100px 50px auto; 
 }
 
 #about {
   margin-top: 50px; 
   background-image: linear-gradient(to right, #edf4ff, white);
-  display: inline-block; 
+  display: flex; 
 }
 
 /*DETAILS SECTION*/
@@ -79,19 +84,19 @@ button{
 .detail{
   margin-top: 50px; 
   background-image: linear-gradient(to right, #edf4ff, white);
-  display: inline-block;
+  display: flex;
 }
 
 .detail img{
   float: right; 
   height: 300px;
   width: 25%; 
-  margin: auto 80px auto auto; 
+  margin: auto 100px 50px auto; 
   display: inline-block;
 }
 .detail h1{
   display: inline-block; 
-  margin: auto auto auto 50px; 
+  margin: auto auto auto 130px; 
   text-align: left; 
   font-family: 'Roboto', sans-serif; 
 }
@@ -100,7 +105,13 @@ button{
   font-family: 'Roboto', sans-serif; 
   font-size: 20px; 
   text-align: left;
-  margin: 50px 700px auto 50px; 
+  margin: 50px 700px auto 130px; 
+  width: 50%; 
+
+}
+
+#detail-description{
+  display: block; 
 }
 
 /*FAQS SECTION*/
@@ -109,12 +120,12 @@ button{
   margin-top: 50px;
   margin-bottom: 50px;  
   background-image: linear-gradient(to right, #edf4ff, white);
-  display: inline-block;
+  display: flex;
 }
 
 #FAQS h1{
   display: inline-block; 
-  margin: auto auto auto 50px; 
+  margin: auto auto auto 130px; 
   text-align: left; 
   font-family: 'Roboto', sans-serif; 
 }
@@ -123,15 +134,19 @@ button{
   font-family: 'Roboto', sans-serif; 
   font-size: 20px; 
   text-align: left;
-  margin: 50px 700px auto 50px; 
+  margin: 50px 700px auto 130px; 
+  width: 50%; 
 }
 
 #FAQS img{
   float: right; 
   height: 300px;
   width: 25%; 
-  margin: auto 80px auto auto; 
-  display: inline-block;
+  margin: auto 80px 50px auto; 
+}
+
+#FAQwrap{
+  display: block; 
 }
 
 /*HEADER SECTION*/
@@ -239,3 +254,36 @@ header a {
 #contact h2{
   font-family: 'Roboto', sans-serif;
 }
+
+@media only screen
+  and (max-width: 480px) {
+    header nav {
+      width: 70%;
+      margin-left: 2%; 
+    }
+
+    #doctor-info p{
+      display: flex; 
+    }
+
+    #header-section{
+      display: inline-block; 
+    }
+
+    #header-image{
+      width: 100%;
+      text-align: center;
+    }
+
+    #header-image img {
+      width: 100%;
+      
+    }
+    #founder img{
+      
+      display: inline-block; 
+    }
+
+
+
+  }
