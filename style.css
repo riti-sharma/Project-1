@@ -3,7 +3,7 @@ body {
 }
 h1{
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-size: 60px; 
 
 }
@@ -12,7 +12,7 @@ input{
   margin: auto auto 15px auto;
   display: inline-block;
   border-radius: 50px 50px 50px 50px; 
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Work Sans', sans-serif;
 
 }
 button{
@@ -21,7 +21,7 @@ button{
   margin: auto;
   display: inline-block; 
   border-radius: 50px 50px 50px 50px;
-  font-family: 'Roboto', sans-serif; 
+  font-family: 'Work Sans', sans-serif;
 }
 
 .search{
@@ -47,7 +47,7 @@ button{
 /*ABOUT SECTION*/
 
 #about p{
-  font-family: 'Roboto', sans-serif; 
+  font-family: 'Work Sans', sans-serif;
   font-size: 20px; 
   text-align: left;
   margin: 50px 700px auto 130px; 
@@ -63,7 +63,7 @@ button{
   display: inline-block; 
   margin: auto auto auto 130px; 
   text-align: left; 
-  font-family: 'Roboto', sans-serif; 
+  font-family: 'Work Sans', sans-serif;
 
 }
 #about img{
@@ -98,11 +98,11 @@ button{
   display: inline-block; 
   margin: auto auto auto 130px; 
   text-align: left; 
-  font-family: 'Roboto', sans-serif; 
+  font-family: 'Work Sans', sans-serif;
 }
 .detail p {
   display: inline-block; 
-  font-family: 'Roboto', sans-serif; 
+  font-family: 'Work Sans', sans-serif;
   font-size: 20px; 
   text-align: left;
   margin: 50px 700px auto 130px; 
@@ -127,11 +127,11 @@ button{
   display: inline-block; 
   margin: auto auto auto 130px; 
   text-align: left; 
-  font-family: 'Roboto', sans-serif; 
+  font-family: 'Work Sans', sans-serif;
 }
 #FAQS p {
   display: inline-block; 
-  font-family: 'Roboto', sans-serif; 
+  font-family: 'Work Sans', sans-serif;
   font-size: 20px; 
   text-align: left;
   margin: 50px 700px auto 130px; 
@@ -166,7 +166,7 @@ header nav {
   margin-left: 50%;
   width: 50%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 header {
@@ -184,7 +184,7 @@ header {
 header a {
   text-decoration: none;
   color: black;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   margin-right: 10px; 
   display: flex;
   align-items: right;
@@ -206,15 +206,15 @@ header a {
 }
 
 #founder p{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Work Sans', sans-serif;
 }
 
 #founder h2{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Work Sans', sans-serif;
 }
 
 #founder h3{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Work Sans', sans-serif;
 }
 
 
@@ -229,13 +229,13 @@ header a {
   display: inline-block; 
   margin: auto auto auto 50px; 
   text-align: left; 
-  font-family: 'Roboto', sans-serif; 
+  font-family: 'Work Sans', sans-serif;
 
 }
 
 .doctor-info p {
   display: inline-block; 
-  font-family: 'Roboto', sans-serif; 
+  font-family: 'Work Sans', sans-serif;
   font-size: 20px; 
   text-align: left;
   margin: 50px 700px auto 50px; 
@@ -248,41 +248,75 @@ header a {
 }
 
 #contact p{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Work Sans', sans-serif;
 }
 
 #contact h2{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Work Sans', sans-serif;
 }
 
 @media only screen
-  and (max-width: 480px) {
-    header nav {
-      width: 70%;
-      margin-left: 2%; 
-    }
+and (max-width: 480px) {
+  #header-image img {
+    height: 200px;
+  }
+  header nav {
+    margin: 0;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .search {
+    padding: 10px 0 10px 0;
+    margin: 10px 0 10px 0;
+  }
+  .search input, .search button {
+    display: block;
+    width: 60%;
+    height: 30px;
+    margin: 0 auto 20px auto;
+  }
+  .doctor-info {
+    margin: 5px 0 5px 0;
+  }
+  #about {
+    display: block;
+    text-align: center;
+    margin-left: 5%; 
+  }
 
-    #doctor-info p{
-      display: flex; 
-    }
+  #description {
+    text-align: center;
+  }
 
-    #header-section{
-      display: inline-block; 
-    }
-
-    #header-image{
-      width: 100%;
-      text-align: center;
-    }
-
-    #header-image img {
-      width: 100%;
-      
-    }
-    #founder img{
-      
-      display: inline-block; 
-    }
+  #about h1, .detail h1, #FAQS h1 {
+    display: block;
+    margin: 0;
+    text-align: center;
+  }
+  #about p, .detail p, #FAQS p {
+    width: 90%;
+    margin: 10px 5% 10px 5%;
+  }
+  #about img {
+    width: auto;
+    margin: 0;
+    margin-bottom: 5%; 
+    
+  }
+  .detail {
+    display: block;
+    margin-left: 5%; 
+  }
+  .detail img, #FAQS img{
+    float: none;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 5%;
+  }
+  #FAQS {
+    display: block; 
+    margin-left: 5%; 
+  }
 
 
 
